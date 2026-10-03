@@ -1,0 +1,10 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/python/supply_chain_assistant/.venv/Scripts/python.exe",
+    "files.associations": {
+        "Nex.C": "cpp",
+        "New.C": "cpp",
+        "Proje.C": "cpp",
+        "Odev.C": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
