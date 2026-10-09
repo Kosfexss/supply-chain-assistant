@@ -1,0 +1,69 @@
+[
+  {
+    "document_id": "price-list-harbor-2026-09",
+    "source": "harbor-roasters-price-list.json",
+    "category": "price_list",
+    "content": "Harbor Roasters September 2026 price list. COF-001 House coffee beans 1 kg costs USD 18.40 per unit. Standard lead time 5 days. Minimum order 10 units.",
+    "metadata": {
+      "sku": "COF-001",
+      "supplier": "Harbor Roasters",
+      "unit_price": 18.4,
+      "currency": "USD",
+      "lead_time_days": 5,
+      "minimum_order_quantity": 10,
+      "source": "September 2026 price list"
+    }
+  },
+  {
+    "document_id": "price-list-mountain-2026-09",
+    "source": "mountain-coffee-price-list.json",
+    "category": "price_list",
+    "content": "Mountain Coffee Supply September 2026 price list. COF-001 House coffee beans 1 kg costs USD 17.95 per unit. Standard lead time 9 days. Minimum order 20 units.",
+    "metadata": {
+      "sku": "COF-001",
+      "supplier": "Mountain Coffee Supply",
+      "unit_price": 17.95,
+      "currency": "USD",
+      "lead_time_days": 9,
+      "minimum_order_quantity": 20,
+      "source": "September 2026 price list"
+    }
+  },
+  {
+    "document_id": "price-list-greenpack-2026-09",
+    "source": "greenpack-price-list.json",
+    "category": "price_list",
+    "content": "GreenPack Wholesale September 2026 price list. CUP-012 Compostable takeaway cups 12 oz cost USD 0.08 per unit. Standard lead time 4 days. Minimum order 100 units.",
+    "metadata": {
+      "sku": "CUP-012",
+      "supplier": "GreenPack Wholesale",
+      "unit_price": 0.08,
+      "currency": "USD",
+      "lead_time_days": 4,
+      "minimum_order_quantity": 100,
+      "source": "September 2026 price list"
+    }
+  },
+  {
+    "document_id": "contract-harbor-coffee-2026",
+    "source": "harbor-roasters-contract.json",
+    "category": "supplier_contract",
+    "content": "Harbor Roasters contract for COF-001. Orders of 30 or more units receive a 3 percent discount. Quotes are valid for 30 days and delivery is subject to confirmation.",
+    "metadata": {
+      "sku": "COF-001",
+      "supplier": "Harbor Roasters",
+      "discount_threshold_quantity": 30,
+      "discount_percentage": 3
+    }
+  },
+  {
+    "document_id": "invoice-coffee-history-2026",
+    "source": "coffee-invoice-history.json",
+    "category": "historical_invoice",
+    "content": "Invoice history for COF-001: the business purchased 25 units from Harbor Roasters at USD 18.70 per unit in July 2026, with delivery in 5 days.",
+    "metadata": {
+      "sku": "COF-001",
+      "supplier": "Harbor Roasters"
+    }
+  }
+]

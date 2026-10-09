@@ -1,6 +1,7 @@
 """Shared data contracts for the supply-chain workflow."""
 
 from dataclasses import dataclass, field
+from datetime import date
 from typing import Any
 
 
@@ -29,6 +30,9 @@ class InventoryItem:
     average_daily_usage: float
     target_stock: int
     supplier_lead_time_days: int = 5
+    warehouse_latitude: float | None = None
+    warehouse_longitude: float | None = None
+    category: str | None = None
 
 
 @dataclass(frozen=True)
@@ -63,6 +67,8 @@ class SupplierOffer:
     source: str
     discount_threshold_quantity: int = 0
     discount_percentage: float = 0.0
+    latitude: float | None = None
+    longitude: float | None = None
 
 
 @dataclass(frozen=True)
@@ -107,3 +113,46 @@ class WorkflowResult:
     unmatched_skus: tuple[str, ...]
     financial_assessment: FinancialAssessment
     purchase_drafts: tuple[PurchaseDraft, ...]
+
+
+@dataclass(frozen=True)
+class FinancialKPIRecord:
+    period_start: date
+    period_end: date
+    currency: str
+    cost_of_goods_sold: float
+    average_inventory_value: float
+
+
+@dataclass(frozen=True)
+class FulfillmentRecord:
+    record_id: str
+    sku: str
+    recorded_at: date
+    requested_quantity: int
+    fulfilled_quantity: int
+
+
+@dataclass(frozen=True)
+class SupplierDeliveryRecord:
+    delivery_id: str
+    supplier: str
+    sku: str
+    promised_date: date
+    actual_date: date | None
+    promised_quantity: int
+    delivered_quantity: int
+
+
+@dataclass(frozen=True)
+class LandedCostRecord:
+    receipt_id: str
+    sku: str
+    supplier: str
+    received_at: date
+    quantity: int
+    unit_price: float
+    freight_cost: float
+    duties: float
+    handling_cost: float
+    currency: str
